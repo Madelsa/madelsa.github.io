@@ -12,7 +12,7 @@ const ReactLogo = (props) => {
   const { nodes, materials } = useGLTF('models/react.glb');
 
   return (
-    <Float floatIntensity={1}>
+    <Float floatIntensity={3} speed={4}>
       <group position={[8, 8, 0]} scale={0.3} {...props} dispose={null}>
         <mesh
           geometry={nodes['React-Logo_Material002_0'].geometry}
