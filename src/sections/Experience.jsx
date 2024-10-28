@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <section className="c-space my-20" id="e&d">
       <div className="w-full text-white-600">
-        <p className="head-text">My Work Experience</p>
+        <p className="head-text">My Education & Experience</p>
 
         <div className="work-container">
           <div className="work-canvas">
@@ -18,7 +18,7 @@ const Experience = () => {
                 <ambientLight intensity={3} />
                 <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
                 <directionalLight position={[10, 10, 10]} intensity={1} />
-                <OrbitControls maxPolarAngle={Math.PI / 2} />
+                <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
                 <Suspense fallback={<Loading />}>
                     <Developer position-y={-3} rotation={[0, 0.6, 0]} scale={3} 
                         animationName={animationName}/>
