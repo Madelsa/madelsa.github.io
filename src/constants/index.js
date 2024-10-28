@@ -11,11 +11,16 @@ export const navLinks = [
   },
   {
     id: 3,
+    name: 'Projects',
+    href: '#projects',
+  },
+  {
+    id: 4,
     name: 'Work',
     href: '#work',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Contact',
     href: '#contact',
   },
@@ -49,7 +54,7 @@ export const myProjects = [
     title: 'Cub3d - A 3D Maze',
     desc: 'Cub3D is a simplified version of a ray-casting game engine inspired by the classic Wolfenstein 3D. The goal of the project is to develop a basic understanding of game development principles, particularly the use of ray-casting to render a 3D view based on 2D map data.',
     subdesc:
-      'A 3D maze made with C athe minilibx library.',
+      'A 3D maze made with C and the minilibx library.',
     href: 'https://github.com/Madelsa/42-Cub3d',
     texture: '/textures/project/Cub3d.mp4',
     logo: 'assets/42.png',

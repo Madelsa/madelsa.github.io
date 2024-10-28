@@ -16,6 +16,7 @@
     "@react-three/drei": "^9.115.0",
     "@react-three/fiber": "^8.17.10",
     "@types/three": "^0.168.0",
+    "alert": "^6.0.2",
     "gh-pages": "^6.2.0",
     "gsap": "^3.12.5",
     "leva": "^0.9.35",
