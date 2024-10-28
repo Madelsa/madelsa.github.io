@@ -156,6 +156,19 @@ body {
 }
 
 
+
+@media (max-width: 768px) {
+  #contact {
+      min-height: 100vh; /* Full viewport height on mobile */
+  }
+
+  .contact-container {
+      padding: 30px; /* Add padding for mobile */
+      width: 90%; /* Prevent overflow */
+  }
+}
+
+
 .waving-hand {
   animation-name: wave-animation;
   animation-duration: 2.5s;

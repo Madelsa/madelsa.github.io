@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import Globe from 'react-globe.gl'
-import { color } from 'three/webgpu'
 import Button from '../components/Button.jsx';
+import { useMediaQuery } from 'react-responsive';
+
 
 
 const About = () => {
@@ -11,6 +12,10 @@ const About = () => {
         setHasCopied(true);
         setTimeout(() => setHasCopied(false), 2000);
     } 
+    const isSmall = useMediaQuery({ maxWidth: 440 });
+    const isMobile = useMediaQuery({ maxWidth: 768 });
+
+    const globeSize = isSmall ? 300 : isMobile ? 300 : 350; // Adjust sizes as needed
   return (
     <section className='c-space my-20' id="about">
         <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -49,8 +54,8 @@ const About = () => {
                     <div className='rounded-3xl w-full sm:h-[326px] 
                         h-fit flex justify-center items-center'>
                             <Globe 
-                                height={350}
-                                width={350}
+                                height={globeSize}
+                                width={globeSize}
                                 backgroundColor='rgba(0, 0, 0, 0)'
                                 backgroundImageOpacity={0.5}
                                 showAtmosphere
@@ -78,7 +83,9 @@ const About = () => {
                         <p className='grid-subtext'>
                             I’m based in Abu Dhabi, United Arab Emirates, where I have worked on various projects.
                         </p>
-                        <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+                        <a href="#contact" className="w-fit">
+                            <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+                        </ a>
                     </div>
                 </div>
             </div>
