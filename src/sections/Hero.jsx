@@ -9,7 +9,7 @@ import Rings from '../components/Rings.jsx';
 import ReactLogo from '../components/ReactLogo.jsx';
 import Button from '../components/Button.jsx';
 import Target from '../components/Target.jsx';
-import CanvasLoader from '../components/Loading.jsx';
+import Loading from '../components/Loading.jsx';
 import HeroCamera from '../components/HeroCamera.jsx';
 import { calculateSizes } from '../constants/index.js';
 import { HackerRoom } from '../components/HackerRoom.jsx';
@@ -35,7 +35,7 @@ const Hero = () => {
             {/* To hide controller */}
             <Leva hidden />
         <Canvas className="w-full h-full">
-          <Suspense fallback={<CanvasLoader />}>
+          <Suspense fallback={<Loading />}>
             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
 
             <HeroCamera isMobile={isMobile}>

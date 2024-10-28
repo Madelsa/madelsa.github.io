@@ -16,8 +16,8 @@ export const navLinks = [
   },
   {
     id: 4,
-    name: 'Work',
-    href: '#work',
+    name: 'Education & Experience',
+    href: '#e&d',
   },
   {
     id: 5,
@@ -85,32 +85,32 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
   };
 };
 
-export const workExperiences = [
+export const Experiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
+    name: '42 Abu Dhabi',
+    pos: 'Student & Software Developer',
+    duration: 'May. 2023 – Oct. 2024',
+    title: "At 42 Abu Dhabi, I've put my university knowledge and skills into practice. I worked on projects like building a custom “printf” function, creating a 2D game and a 3D ray casted maze, implementing a sorting algorithm, developing a basic shell, and many more.",
+    icon: '/assets/42.svg',
     animation: 'victory',
   },
   {
     id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
+    name: 'Site Technology',
+    pos: 'Intern',
+    duration: 'Jan. 2021 – Feb. 2021',
+    title: "At Site Technology, I set up an Intermediate Distribution Frame (IDF), routed and terminated CAT6 ethernet cables from a Horizontal Bridge to designated wall sockets, and established reliable network connections for workstations.",
+    icon: '/assets/ST.svg',
     animation: 'clapping',
   },
   {
     id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
-    animation: 'salute',
+    name: 'Abu Dhabi University',
+    pos: 'Student',
+    duration: 'Jan. 2017 – July 2021',
+    title: "At Abu Dhabi University, I developed critical thinking and problem-solving skills and had my first exposure to coding. This foundation prepared me to tackle complex challenges in academic and practical settings.",
+    icon: '/assets/ADU.svg',
+    animation: 'stretching',
   },
 ];

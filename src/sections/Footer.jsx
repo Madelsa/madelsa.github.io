@@ -12,7 +12,7 @@ const Footer = () => {
                 <img src="assets/linkedin.svg" alt="linkedin" className='w-1/2 h-1/2' />
             </a>
 
-            <a href="https://drive.google.com/file/d/1O1ZnZeHpzEEsf8erKB_U2jYZNIecqEyN/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='social-icon'>
+            <a href="https://drive.google.com/file/d/1aa-XnVmLWkfhoOs-Db9-J3tuC4md2aaR/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='social-icon'>
                 <img src="assets/CV.svg" alt="CV" className='w-1/2 h-1/2' />
             </a>
         </div>
